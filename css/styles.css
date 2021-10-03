@@ -1,6 +1,57 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  width: 1600px;
+  height: 1880px;
+
+  background: #ffffff;
+
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* header section */
+.studio-logo {
+  font-family: Raleway;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.studio-logo-second-part {
+  color: #000;
+}
+
+.navigation a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+  color: #2196f3;
+}
+
+.contacts-header {
+}
