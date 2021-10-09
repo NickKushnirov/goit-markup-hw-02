@@ -1,6 +1,5 @@
 :root {
   --primary-action-color: #2196f3;
-  --logo-link-second-color: #000000;
   --project-item-heading-color: #212121;
   --header-color: #212121;
   --primary-text-color: #757575;
@@ -65,7 +64,7 @@ body {
 }
 
 .logo-header-second-part {
-  color: var(--logo-link-second-color);
+  color: #000000;
 }
 
 .header-nav-link,
