@@ -3,11 +3,13 @@
   --project-item-heading-color: #212121;
   --header-color: #212121;
   --primary-text-color: #757575;
+  --bg-color: #ffffff;
+  --hero-active-color: #ffffff;
 }
 
 body {
   width: 1600px;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -95,7 +97,7 @@ body {
 }
 
 .hero-header {
-  color: #ffffff;
+  color: var(--hero-active-color);
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -105,7 +107,7 @@ body {
 
 .hero-btn {
   background-color: var(--primary-action-color);
-  color: #ffffff;
+  color: var(--hero-active-color);
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
