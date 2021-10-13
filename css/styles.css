@@ -1,19 +1,19 @@
 :root {
+  --bg-color: #ffffff;
+  --bg-hero-color: #2f303a;
+  --bg-footer-color: #2f303a;
   --primary-action-color: #2196f3;
   --project-item-heading-color: #212121;
   --header-color: #212121;
   --primary-text-color: #757575;
-  --bg-color: #ffffff;
   --hero-active-color: #ffffff;
+  --logo-header-second-part-color: #000000;
+  --btn-category-color: #f5f4fa;
 }
 
 body {
-  width: 1600px;
   background-color: var(--bg-color);
-
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -31,13 +31,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .general-header-properties {
   font-weight: 700;
-  letter-spacing: 0.03em;
   color: var(--header-color);
 }
 
@@ -54,19 +53,18 @@ body {
   margin: -1px;
 }
 
-/* header section */
+/* header- and footer- section  */
 
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--primary-action-color);
 }
 
 .logo-header-second-part {
-  color: #000000;
+  color: var(--logo-header-second-part-color);
 }
 
 .header-nav-link,
@@ -77,23 +75,45 @@ body {
   color: var(--project-item-heading-color);
 }
 
+.header-contact-link {
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
 .header-nav-link:hover,
 .header-nav-link:focus,
 .header-contact-link:hover,
-.header-contact-link:focus {
+.header-contact-link:focus,
+.footer-contact-link:hover,
+.footer-contact-link:focus {
   color: var(--primary-action-color);
 }
 
-.header-contact-link {
-  font-weight: 500;
-  color: #757575;
+.footer-section {
+  background-color: var(--bg-footer-color);
+}
+
+.logo-footer-second-part {
+  color: var(--bg-color);
+}
+
+.footer-contact-link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.map-link {
+  color: var(--bg-color);
+}
+
+.header-nav-link.active-page {
+  color: var(--primary-action-color);
 }
 
 /* hero section */
 
 .hero-section {
-  background-color: #2f303a;
-  height: 600px;
+  background-color: var(--bg-hero-color);
 }
 
 .hero-header {
@@ -117,7 +137,7 @@ body {
 
 .features-item-name {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -128,13 +148,13 @@ body {
 
 .activities-and-team-header {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
 }
 
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
 }
 
 .team-member-speciality {
@@ -146,12 +166,13 @@ body {
 
 .btn-category {
   color: var(--project-item-heading-color);
-  background-color: #f5f4fa;
+  background-color: var(--btn-category-color);
 }
 
 .btn-category:hover,
-.btn-category:focus {
-  color: #ffffff;
+.btn-category:focus,
+.btn-category.active-btn {
+  color: var(--bg-color);
   background-color: var(--primary-action-color);
 }
 
@@ -164,28 +185,4 @@ body {
 .description-category {
   font-size: 16px;
   line-height: 1.88;
-}
-
-/* footer section */
-
-.footer-section {
-  background-color: #2f303a;
-}
-
-.logo-footer-second-part {
-  color: #ffffff;
-}
-
-.footer-contact-link {
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-contact-link:hover,
-.footer-contact-link:focus {
-  color: var(--primary-action-color);
-}
-
-.map-link {
-  color: #ffffff;
 }
